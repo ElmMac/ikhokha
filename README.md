@@ -1,5 +1,12 @@
 # [ElmMac](https://elmmac.co.za/) - Laravel iKhokha Payment Integration API 💳
 
+# Laravel iKhokha Payment Integration API (elmmac/ikhokha) 💳
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Laravel](https://img.shields.io/badge/Laravel-9%2F10-orange.svg)](https://laravel.com)
+[![GitHub Repo stars](https://img.shields.io/github/stars/ElmMac/ikhokha?style=social)](https://github.com/ElmMac/ikhokha/stargazers)
+
+
 Official Laravel package to integrate [iKhokha](https://www.ikhokha.com/) Pay Links and Webhooks into your Laravel projects.
 
 ---
