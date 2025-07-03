@@ -15,9 +15,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
-    "scripts": {
-  "lint": "pint"
-    }
+    "require": {}
 
 }
