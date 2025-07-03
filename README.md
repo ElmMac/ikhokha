@@ -281,7 +281,7 @@ Make sure tests pass if you're submitting functional changes.
 ## 🙏 Credits
 
 Developed with 🚀 by **ElmMac Devs**\
-Maintained by **Misael Cruise Mutege** — Durban, South Africa\
+Maintained by **Misael Cruise Mutege** — [WhatsApp: +27786411181](https://web.whatsapp.com/send?phone=27786411181)  Durban, South Africa\
 Digital Dev | Hustler Mode: `ON 💼`
 
 ---
