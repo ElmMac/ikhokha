@@ -1,0 +1,19 @@
+{
+    "name": "elmmac/ikhokha",
+    "description": "An ElmMac Pty Ltd iKhokha Payment Gateway API Wrapper for Laravel Framework",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elmmac\\Ikhokha\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Misael Cruise Mutege From ElmMac Pty Ltd",
+            "email": "misael@elmmac.co.za"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
