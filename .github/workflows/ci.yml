@@ -1,6 +1,8 @@
 name: 🔁 CI Tests - iKhokha Package
 
 on:
+  workflow_dispatch: # only runs manually
+  
   push:
     branches: [main]
   pull_request:
