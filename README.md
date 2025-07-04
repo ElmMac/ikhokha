@@ -176,10 +176,46 @@ IkhokhaPayment::create([
     'status' => 'pending',
 ]);
 ```
+---
+
+## 🔗 Create Payment Link Payload - REQUEST | Refer to 🔗 [iKhokha API Overview](https://dev.ikhokha.com/overview) for more.
+
+Use this structure to initiate payment (All iKhokha Requests & Responses MUST be in JSON format):
+
+```php Request Object
+$payload = [
+    "entityID" => config('ikhokha.entry_id'),
+    "externalEntityID" => config('ikhokha.external_entity_id'),
+    "amount" => 5000,
+    "currency" => "ZAR",
+    "requesterUrl" => config('ikhokha.urls.requester_url'),
+    "mode" => "live",
+    "externalTransactionID" => $transactionId, // TRANS789
+    "urls" => [
+        "callbackUrl" => config('ikhokha.urls.callback_url'),
+        "successPageUrl" => config('ikhokha.urls.success_url'),
+        "failurePageUrl" => config('ikhokha.urls.failure_url'),
+        "cancelUrl" => config('ikhokha.urls.cancel_url')
+    ]
+];
+```
+Create Paylink/Payment Link Response Object
+```
+CREATE PAYMENT LINK - RESPONSE
+{
+    "responseCode": "00",
+    "message": "",
+    "paylinkUrl": "https://securepay.ikhokha.red/2zh1zj6y8xpb0g3",
+    "paylinkID": "2zh1zj6y8xpb0g3",
+    "externalTransactionID": "TRANS789" // $transactionId
+}
+```
+
 
 ---
 
-## 🔁 Webhook Setup
+## 🔁 Webhook Setup | Refer to 🔗 [iKhokha API Overview](https://dev.ikhokha.com/overview) for more.
+
 
 📬 Webhook URL:
 
@@ -199,38 +235,12 @@ Content-Type: application/json
 
 ```json
 {
-    "paylinkID": "abc123",
+    "paylinkID": "2zh1zj6y8xpb0g3", // Gotten from Create Payment Link Response
     "status": "SUCCESS",
     "externalTransactionID": "IKH_REF_CODE_9911",
     "responseCode": "00"
 }
 ```
-
----
-
-## 🔗 Payment Link Payload
-
-Use this structure to initiate payment:
-
-```php
-$payload = [
-    "entityID" => config('ikhokha.entry_id'),
-    "externalEntityID" => config('ikhokha.external_entity_id'),
-    "amount" => 5000,
-    "currency" => "ZAR",
-    "requesterUrl" => config('ikhokha.urls.requester_url'),
-    "mode" => "live",
-    "externalTransactionID" => $transactionId,
-    "urls" => [
-        "callbackUrl" => config('ikhokha.urls.callback_url'),
-        "successPageUrl" => config('ikhokha.urls.success_url'),
-        "failurePageUrl" => config('ikhokha.urls.failure_url'),
-        "cancelUrl" => config('ikhokha.urls.cancel_url')
-    ]
-];
-```
-
-Refer to 🔗 [iKhokha API Overview](https://dev.ikhokha.com/overview) for more.
 
 ---
 
