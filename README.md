@@ -2,6 +2,8 @@
 
 # Laravel iKhokha Payment Integration API (elmmac/ikhokha) 💳
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/elmmac/ikhokha.svg?style=flat-square)](https://packagist.org/packages/elmmac/ikhokha)
+[![Total Downloads](https://img.shields.io/packagist/dt/elmmac/ikhokha.svg?style=flat-square)](https://packagist.org/packages/elmmac/ikhokha)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Laravel](https://img.shields.io/badge/Laravel-9%2F10-orange.svg)](https://laravel.com)
 [![GitHub Repo stars](https://img.shields.io/github/stars/ElmMac/ikhokha?style=social)](https://github.com/ElmMac/ikhokha/stargazers)
