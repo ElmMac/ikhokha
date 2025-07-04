@@ -174,7 +174,7 @@ class IkhokhaPaymentController extends Controller
             'paid_at' => $newStatus === 'completed' ? now() : null,
             'webhook_received_at' => now() ?? null,
             'webhook_signature' => $signature ?? null,
-            'ik_app_id' => $appId ?? null,
+            // 'ik_app_id' => $appId ?? null,
         ]);
 
         Log::info('Webhook processed successfully', [
