@@ -23,7 +23,6 @@ return new class extends Migration {
             $table->string('status')->default('pending'); // pending, completed, failed, etc.
             $table->timestamp('webhook_received_at')->nullable();
             $table->string('webhook_signature')->nullable();
-            $table->string('ik_app_id')->nullable();
             $table->timestamp('paid_at')->nullable(); // only filled on success
             $table->timestamps();
         });
